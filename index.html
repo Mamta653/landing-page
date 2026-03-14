@@ -3,37 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Welcome To This Repository </title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Bubs | Creative Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-          <h1 class="logo"> My Brand </h1>
-          <ul class="nav-links">
-            <Li><a href="#">Home</a></Li>
-             <Li><a href="#">About</a></Li>
-             <Li><a href="#">Services</a></Li>
-             <Li><a href="#">Contact Us</a></Li>
-          </ul>
-       </nav>
+
+    <header class="navbar">
+        <nav class="container">
+            <div class="logo">BUBS<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-     <section class="hero">
-      <h2> Welcome To My Landing Page .</h2>
-      <p>
-        This is a simple responsive layout built with HTML5, Flexbox, and CSS Grid.
-      </p>
-      <button>Get Start</button>
-     </section>
-     <section class="features">
-      <div class="feature"> Fast Performance</div>
-      <div class="feature">Easy to Use</div>
-      <div class="feature">Secure & Reliable</div>
-      <div class="feature">Creative Design</div>
-     </section>
-     <footer>
-      <p>&copy; 2025 My Brand. All Rights Reserved.</p>
-     </footer>
-    
-  </body>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <span class="badge">Available for Projects</span>
+                <h1>Design that <span class="gradient-text">Commands</span> Attention.</h1>
+                <p>Crafting high-performance digital experiences with a focus on clean code and aesthetic precision.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Start a Project</a>
+                    <a href="#services" class="btn btn-ghost">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="features container">
+            <div class="feature-card">
+                <div class="icon">✨</div>
+                <h3>Clean UI/UX</h3>
+                <p>Minimalist designs that put your content first.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">⚡</div>
+                <h3>Fast Load</h3>
+                <p>Zero bloat, just pure optimized performance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🛡️</div>
+                <h3>Secure</h3>
+                <p>Modern security standards for peace of mind.</p>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing container">
+            <h2 class="section-title">Simple Pricing</h2>
+            <div class="price-grid">
+                <div class="price-card">
+                    <h4>Basic</h4>
+                    <div class="price">$19<span>/mo</span></div>
+                    <ul>
+                        <li>Single Page Site</li>
+                        <li>Responsive Design</li>
+                        <li>Email Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Choose Plan</a>
+                </div>
+                <div class="price-card featured">
+                    <div class="best-value">Best Value</div>
+                    <h4>Pro</h4>
+                    <div class="price">$49<span>/mo</span></div>
+                    <ul>
+                        <li>Multi-Page Site</li>
+                        <li>SEO Optimization</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Choose Plan</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bubs Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
